@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>عبدالعزيز</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f0f0f0;
+            margin: 0;
+            padding: 20px;
+        }
+        .container {
+            background: #230181;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+            color: #ffffff;
+            max-width: 600px;
+            margin: auto;
+        }
+        h1 {
+            color: #ffffff;
+            text-align: center;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 20px;
+        }
+        th, td {
+            border: 1px solid #ccc;
+            padding: 5px; /* تصغير padding */
+            text-align: center;
+        }
+        th {
+            background-color: #000000;
+        }
+        tr:nth-child(even) {
+            background-color: #3c007c;
+        }
+        input {
+            margin: 5px 0;
+            padding: 5px; /* تصغير padding */
+            width: 80%; /* تقليل العرض */
+            border-radius: 4px;
+            border: 1px solid #ccc;
+            font-size: 14px; /* تصغير الخط */
+            font-weight: bold; /* جعل الخط بولد */
+        }
+        button {
+            padding: 10px;
+            background-color: #ffffff;
+            border: none;
+            color: #000;
+            border-radius: 4px;
+            cursor: pointer;
+            width: 100%;
+            margin-top: 10px;
+        }
+        button:hover {
+            background-color: #218838;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>جدول الميزانية</h1>
+        <table>
+            <tr>
+                <th>الوصف</th>
+                <th>المصروفات</th>
+            </tr>
+            <tr>
+                <td>قرض1</td>
+                <td><input type="number" id="a2" placeholder=""></td>
+            </tr>
+            <tr>
+                <td>قرض2</td>
+                <td><input type="number" id="a3" placeholder=""></td>
+            </tr>
+            <tr>
+                <td>دفع مسبق</td>
+                <td><input type="number" id="a4" placeholder=""></td>
+            </tr>
+            <tr>
+                <td>مجموع القروض</td>
+                <td><input type="number" id="a5" placeholder="" readonly></td>
+            </tr>
+            <tr>
+                <td>النفقة</td>
+                <td><input type="number" id="a6" placeholder=""></td>
+            </tr>
+            <tr>
+                <td>البيت و الاهل</td>
+                <td><input type="number" id="a7" placeholder=""></td>
+            </tr>
+            <tr>
+                <td>مصروف الاولاد</td>
+                <td><input type="number" id="a8" placeholder=""></td>
+            </tr>
+            <tr>
+                <td>مجموع النفقة</td>
+                <td><input type="number" id="a9" placeholder="" readonly></td>
+            </tr>
+            <tr>
+                <td>مصروفي</td>
+                <td><input type="number" id="a10" placeholder=""></td>
+            </tr>
+            <tr>
+                <td>الاستراحة</td>
+                <td><input type="number" id="a11" placeholder=""></td>
+            </tr>
+            <tr>
+                <td>اقساط تابي وتمارا وغيرها</td>
+                <td><input type="number" id="a12" placeholder=""></td>
+            </tr>
+            <tr>
+                <td>مجموع مصروفي و الاقساط</td>
+                <td><input type="number" id="a13" placeholder="" readonly></td>
+            </tr>
+            <tr>
+                <td>ادخار 1</td>
+                <td><input type="number" id="a14" placeholder=""></td>
+            </tr>
+            <tr>
+                <td>ادخار 2</td>
+                <td><input type="number" id="a15" placeholder=""></td>
+            </tr>
+            <tr>
+                <td>مجموع الادخار</td>
+                <td><input type="number" id="a16" placeholder="" readonly></td>
+            </tr>
+            <tr>
+                <td>المصروفات بدون مصروفي</td>
+                <td><input type="number" id="a17" placeholder="" readonly></td>
+            </tr>
+            <tr>
+                <td>الخصومات الشهرية</td>
+                <td><input type="number" id="a18" placeholder="" readonly></td>
+            </tr>
+            <tr>
+                <th>الوصف</th>
+                <th>الدخل</th>
+            </tr>
+            <tr>
+                <td>الراتب الصافي</td>
+                <td><input type="number" id="bb21" placeholder=""></td>
+            </tr>
+            <tr>
+                <td>M قسط</td>
+                <td><input type="number" id="bb38" placeholder=""></td>
+            </tr>
+            <tr>
+                <td>M مجموع الراتب و قسط</td>
+                <td><input type="number" id="bb39" placeholder="" readonly></td>
+            </tr>
+            <tr>
+                <td>مبلغ من الراتب السابق</td>
+                <td><input type="number" id="bb40" placeholder=""></td>
+            </tr>
+            <tr>
+                <td>حساب المواطن</td>
+                <td><input type="number" id="bb41" placeholder=""></td>
+            </tr>
+            <tr>
+                <td>مبلغ كاش بجيبي</td>
+                <td><input type="number" id="bb42" placeholder=""></td>
+            </tr>
+            <tr>
+                <td>حوالات واردة لحساباتي</td>
+                <td><input type="number" id="bb43" placeholder=""></td>
+            </tr>
+            <tr>
+                <td>مجموع الكاش باك</td>
+                <td><input type="number" id="bb44" placeholder=""></td>
+            </tr>
+            <tr>
+                <td>الوقت (بالأيام)</td>
+                <td><input type="number" id="bb45" placeholder="" readonly></td>
+            </tr>
+            <tr>
+                <td>مجموع الدخل</td>
+                <td><input type="number" id="bb46" placeholder="" readonly></td>
+            </tr>
+            <tr>
+                <td>المسموح ادخاره</td>
+                <td><input type="number" id="bb47" placeholder="" readonly></td>
+            </tr>
+            <tr>
+                <td>المسموح اليومي</td>
+                <td><input type="number" id="bb48" placeholder="" readonly></td>
+            </tr>
+            <tr>
+                <td>الباقي من الراتب وحساب المواطن</td>
+                <td><input type="number" id="bb49" placeholder="" readonly></td>
+            </tr>
+            <tr>
+                <td>المجموع</td>
+                <td><input type="number" id="bb50" placeholder="" readonly></td>
+            </tr>
+        </table>
+    </div>
+
+    <script>
+        function calculateTotal() {
+            const today = new Date();
+            const day27 = new Date(today.getFullYear(), today.getMonth(), 27);
+            const dayDiff = Math.floor((today - day27) / (1000 * 60 * 60 * 24));
+
+            document.getElementById('bb45').value = Math.abs(dayDiff); // الرقم بدون علامة سالب
+
+            const a2 = parseFloat(document.getElementById('a2').value) || 0;
+            const a3 = parseFloat(document.getElementById('a3').value) || 0;
+            const a4 = parseFloat(document.getElementById('a4').value) || 0;
+            const a5 = a2 + a3 - a4; // مجموع القروض
+            document.getElementById('a5').value = a5.toFixed(2);
+
+            const a6 = parseFloat(document.getElementById('a6').value) || 0;
+            const a7 = parseFloat(document.getElementById('a7').value) || 0;
+            const a8 = parseFloat(document.getElementById('a8').value) || 0;
+            const a9 = a6 + a7 + a8; // مجموع النفقة
+            document.getElementById('a9').value = a9.toFixed(2);
+
+            const a10 = parseFloat(document.getElementById('a10').value) || 0;
+            const a11 = parseFloat(document.getElementById('a11').value) || 0;
+            const a12 = parseFloat(document.getElementById('a12').value) || 0;
+            const a13 = a10 + a11 + a12; // مجموع المصروفات
+            document.getElementById('a13').value = a13.toFixed(2);
+
+            const a14 = parseFloat(document.getElementById('a14').value) || 0;
+            const a15 = parseFloat(document.getElementById('a15').value) || 0;
+            const a16 = a14 + a15; // مجموع الادخار
+            document.getElementById('a16').value = a16.toFixed(2);
+
+            const a17 = a5 + a9; // المصروفات بدون مصروفي
+            document.getElementById('a17').value = a17.toFixed(2);
+
+            const a18 = a5 + a9 + a13 + a16; // الخصومات الشهرية
+            document.getElementById('a18').value = a18.toFixed(2);
+
+            const bb21 = parseFloat(document.getElementById('bb21').value) || 0;
+            const bb38 = parseFloat(document.getElementById('bb38').value) || 0;
+            const bb39 = bb21 + bb38; // مجموع الراتب و قسط
+            document.getElementById('bb39').value = bb39.toFixed(2);
+
+            const bb40 = parseFloat(document.getElementById('bb40').value) || 0;
+            const bb41 = parseFloat(document.getElementById('bb41').value) || 0;
+            const bb42 = parseFloat(document.getElementById('bb42').value) || 0;
+            const bb43 = parseFloat(document.getElementById('bb43').value) || 0;
+            const bb44 = parseFloat(document.getElementById('bb44').value) || 0;
+
+            const bb46 = bb39 + bb40 + bb41 + bb42 + bb43 + bb44; // مجموع الدخل
+            document.getElementById('bb46').value = bb46.toFixed(2);
+
+            const bb49 = bb46 - a18; // الباقي من الراتب وحساب المواطن
+            document.getElementById('bb49').value = bb49.toFixed(2);
+
+            const bb47 = bb49 - (Math.abs(dayDiff) * 100); // الحساب المعدل
+            document.getElementById('bb47').value = bb47.toFixed(2);
+
+            const bb48 = bb45 > 0 ? (bb49 / bb45) : 0; // المسموح اليومي
+            document.getElementById('bb48').value = bb48.toFixed(2);
+
+            const bb50 = bb49 - bb47; // المجموع
+            document.getElementById('bb50').value = bb50.toFixed(2);
+        }
+
+        // تفعيل الحساب تلقائيًا عند إدخال أي قيمة
+        const inputs = document.querySelectorAll('input[type="number"]');
+        inputs.forEach(input => {
+            input.addEventListener('input', calculateTotal);
+        });
+
+        // حساب إجمالي عند تحميل الصفحة
+        window.onload = calculateTotal;
+    </script>
+</body>
+</html>
